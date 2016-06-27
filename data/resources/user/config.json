@@ -9,37 +9,29 @@
 			"id": "name",
 			"order": 0
 		},
-		"pid": {
-			"name": "pid",
+		"loginName": {
+			"name": "loginName",
 			"type": "string",
 			"typeLabel": "string",
 			"required": true,
-			"id": "pid",
+			"id": "loginName",
 			"order": 1
 		},
-		"desc": {
-			"name": "desc",
+		"email": {
+			"name": "email",
 			"type": "string",
 			"typeLabel": "string",
 			"required": true,
-			"id": "desc",
+			"id": "email",
 			"order": 2
 		},
-		"level": {
-			"name": "level",
+		"password": {
+			"name": "password",
 			"type": "string",
 			"typeLabel": "string",
 			"required": true,
-			"id": "level",
+			"id": "password",
 			"order": 3
-		},
-		"strategyid": {
-			"name": "strategyid",
-			"type": "string",
-			"typeLabel": "string",
-			"required": true,
-			"id": "strategyid",
-			"order": 4
 		}
 	}
 }

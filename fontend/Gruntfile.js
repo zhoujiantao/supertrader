@@ -12,32 +12,51 @@ function configGrunt(grunt){
 
 
 	var jsVersion = {};
-	jsVersion.main=buildPath+'/scripts/vendor-v'+version+'.js';
-	jsVersion.dist = distPath+'/scripts/vendor-v'+version+'.js';
+	jsVersion.build=buildPath+'/scripts/app-v'+version+'.js';
+	jsVersion.build_vendor = buildPath+'/scripts/vendor.js';
+
+	jsVersion.dist = distPath+'/scripts/app-v'+version+'.js';
+	jsVersion.dist_vendor = distPath+'/scripts/vendor.js';
+
 
 	var browserifyOption =  (function (){
 		var  transform =   ['reactify','envify','babelify'];
 
-		var main =  {
+		var build =  {
 			files:{},
 
 			options: {
+				external:'react',
 			 	transform: transform
 
 			}
 		} ;
-		main.files[jsVersion.main]  = ['src/scripts/**/*.js','src/scripts/*.js','src/scripts/**/**/*.js'];
+		build.files[jsVersion.build]  = ['src/scripts/app.js'];
+		var vendor={
+			options: {
+				require: ['react'],
+				transform: transform
+
+			}
+		};
+		vendor.dest = jsVersion.build_vendor;
+
 
 		var dist = {
 			 files:{},
+
 			options: {
-				transform: transform
+				transform: transform   ,
+				external:'react',
 			}
 		} ;
-		dist.files[jsVersion.dist]  =   ['src/scripts/**/*.js','src/scripts/*.js','src/scripts/**/**/*.js'];
+		dist.files[jsVersion.dist]  =   ['src/scripts/app.js'];
+		dist.files[jsVersion.dist_vendor]  =  ['src/scripts/vendor.js'];
 
 		return{
-			main:main,
+			vendor:vendor,
+			build:build,
+
 			dist:dist
 		} ;
 	})();
@@ -46,7 +65,7 @@ function configGrunt(grunt){
 		  var main={files:{}};
 		  var dist ={files:{}};
 
-		main.files[buildPath+'/scripts/vendor-v'+version+'.min.js']  = jsVersion.main;
+		main.files[buildPath+'/scripts/vendor-v'+version+'.min.build']  = jsVersion.main;
 		dist.files[distPath+'/scripts/vendor-v'+version+'.min.js']  =  jsVersion.dist;
 		return{
 			main:main,
@@ -54,34 +73,19 @@ function configGrunt(grunt){
 		} ;
 	})();
 
-	var stylusOption = (function(){
-		var main={files:{}};
-		var dist ={files:{}};
-
-		var source = ['src/styles/dist-config/*.styl'];
-
-		main.files[buildPath+'/styles/vendor-v'+version+'.min.css']  = source;
-		dist.files[distPath+'/styles/vendor-v'+version+'.min.css']  =source;
-		return{
-			main:main,
-			dist:dist
-		} ;
-	})();
 
 
 	grunt.initConfig({
 		// Metadata
 		pkg: grunt.file.readJSON('package.json'),
 		browserify: {
-			main: browserifyOption.main,
-			dist: browserifyOption.dist
+			build: browserifyOption.build,
+			dist: browserifyOption.dist,
+			vendor:  browserifyOption.vendor
 		},
-		stylus:{
-		   main:stylusOption.main,
-			dist:stylusOption.dist
-		},
+
 		copy:{
-			 main:{
+			build:{
 				files:[
 					{expand: true,flatten:true, src: ['src/index.html'], dest: 'build/'},
 					{expand: true,flatten:true, src: ['src/styles/imgs/*.*'], dest: 'build/styles/imgs'}
@@ -92,12 +96,12 @@ function configGrunt(grunt){
 			}
 		},
 		uglify:{
-			main:uglifyOption.main,
+			build:uglifyOption.build,
 			dist:  uglifyOption.dist
 		},
 
 		replace:{
-			main:{
+			build:{
 				src: ['build/*.html'],
 				overwrite: true,
 				replacements:[
@@ -160,48 +164,8 @@ function configGrunt(grunt){
 			options: {
 				interrupt: false
 			}
-		},
-		webpack: {
-			build: {
-				// webpack options
-				entry: "./client/lib/index.js",
-				output: {
-					path: "asserts/",
-					filename: "[hash].js",
-				},
-
-				stats: {
-					// Configure the console output
-					colors: false,
-					modules: true,
-					reasons: true
-				},
-				// stats: false disables the stats output
-
-				storeStatsTo: "xyz", // writes the status to a variable named xyz
-				// you may use it later in grunt i.e. <%= xyz.hash %>
-
-				progress: false, // Don't show progress
-				// Defaults to true
-
-				failOnError: false, // don't report error to grunt if webpack find errors
-				// Use this if webpack errors are tolerable and grunt should continue
-
-				watch: true, // use webpacks watcher
-				// You need to keep the grunt process alive
-
-				keepalive: true, // don't finish the grunt task
-				// Use this in combination with the watch option
-
-				inline: true,  // embed the webpack-dev-server runtime into the bundle
-				// Defaults to false
-
-				hot: true, // adds the HotModuleReplacementPlugin and switch the server to hot mode
-				// Use this in combination with the inline option
-
-			},
-			dist: {}
 		}
+
 
 	});
 
@@ -214,13 +178,14 @@ function configGrunt(grunt){
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	 
 	 grunt.loadNpmTasks('grunt-browserify');
-	grunt.loadNpmTasks('grunt-contrib-stylus');
+
 
 	grunt.loadNpmTasks('grunt-webpack');
 
-	grunt.registerTask('default', ["copy:main","replace:main",'browserify:main','stylus:main','watch']);
+	grunt.registerTask('default', ["copy:build","replace:build",'browserify:build','watch']);
+	grunt.registerTask('build', ["copy:build","replace:build",'browserify','browserify','watch']);
 
-	grunt.registerTask('dist', ["copy:dist","replace:dist",'browserify:dist','uglify:dist','stylus:dist']);
+	grunt.registerTask('dist', ["copy:dist","replace:dist",'browserify:dist','uglify:dist']);
 
 
 

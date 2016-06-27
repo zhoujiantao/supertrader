@@ -33,45 +33,13 @@
 			"id": "symbolName",
 			"order": 3
 		},
-		"openType": {
-			"name": "openType",
-			"type": "string",
-			"typeLabel": "string",
-			"required": true,
-			"id": "openType",
-			"order": 4
-		},
-		"closeType": {
-			"name": "closeType",
-			"type": "string",
-			"typeLabel": "string",
-			"required": true,
-			"id": "closeType",
-			"order": 5
-		},
-		"closeTypeName": {
-			"name": "closeTypeName",
-			"type": "string",
-			"typeLabel": "string",
-			"required": true,
-			"id": "closeTypeName",
-			"order": 6
-		},
-		"openTypeName": {
-			"name": "openTypeName",
-			"type": "string",
-			"typeLabel": "string",
-			"required": true,
-			"id": "openTypeName",
-			"order": 7
-		},
 		"openPrice": {
 			"name": "openPrice",
 			"type": "string",
 			"typeLabel": "string",
 			"required": true,
 			"id": "openPrice",
-			"order": 8
+			"order": 4
 		},
 		"closePrice": {
 			"name": "closePrice",
@@ -79,7 +47,7 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "closePrice",
-			"order": 9
+			"order": 5
 		},
 		"stoploss": {
 			"name": "stoploss",
@@ -87,7 +55,7 @@
 			"typeLabel": "string",
 			"required": true,
 			"id": "stoploss",
-			"order": 10
+			"order": 6
 		},
 		"takeProfit": {
 			"name": "takeProfit",
@@ -95,7 +63,7 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "takeProfit",
-			"order": 11
+			"order": 7
 		},
 		"timeRange": {
 			"name": "timeRange",
@@ -103,7 +71,7 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "timeRange",
-			"order": 12
+			"order": 8
 		},
 		"stoplossPips": {
 			"name": "stoplossPips",
@@ -111,7 +79,7 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "stoplossPips",
-			"order": 13
+			"order": 9
 		},
 		"takeProfitPips": {
 			"name": "takeProfitPips",
@@ -119,7 +87,7 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "takeProfitPips",
-			"order": 14
+			"order": 10
 		},
 		"profitPips": {
 			"name": "profitPips",
@@ -127,7 +95,7 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "profitPips",
-			"order": 15
+			"order": 11
 		},
 		"openPercentage": {
 			"name": "openPercentage",
@@ -135,7 +103,7 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "openPercentage",
-			"order": 16
+			"order": 12
 		},
 		"closePercentage": {
 			"name": "closePercentage",
@@ -143,7 +111,7 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "closePercentage",
-			"order": 17
+			"order": 13
 		},
 		"lots": {
 			"name": "lots",
@@ -151,55 +119,15 @@
 			"typeLabel": "string",
 			"required": false,
 			"id": "lots",
-			"order": 18
+			"order": 14
 		},
-		"openPositionId": {
-			"name": "openPositionId",
+		"planId": {
+			"name": "planId",
 			"type": "string",
 			"typeLabel": "string",
 			"required": false,
-			"id": "openPositionId",
-			"order": 19
-		},
-		"openPositionName": {
-			"name": "openPositionName",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "openPositionName",
-			"order": 20
-		},
-		"closePositionId": {
-			"name": "closePositionId",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "closePositionId",
-			"order": 21
-		},
-		"closePositionName": {
-			"name": "closePositionName",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "closePositionName",
-			"order": 22
-		},
-		"accountId": {
-			"name": "accountId",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "accountId",
-			"order": 23
-		},
-		"accountName": {
-			"name": "accountName",
-			"type": "string",
-			"typeLabel": "string",
-			"required": false,
-			"id": "accountName",
-			"order": 24
+			"id": "planId",
+			"order": 15
 		}
 	}
 }

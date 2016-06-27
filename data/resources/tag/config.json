@@ -1,21 +1,13 @@
 {
 	"type": "Collection",
 	"properties": {
-		"tradeId": {
-			"name": "tradeId",
-			"type": "string",
-			"typeLabel": "string",
-			"required": true,
-			"id": "tradeId",
-			"order": 0
-		},
 		"tagId": {
 			"name": "tagId",
 			"type": "string",
 			"typeLabel": "string",
 			"required": true,
 			"id": "tagId",
-			"order": 1
+			"order": 0
 		},
 		"tagName": {
 			"name": "tagName",
@@ -23,15 +15,31 @@
 			"typeLabel": "string",
 			"required": true,
 			"id": "tagName",
-			"order": 2
+			"order": 1
 		},
-		"desc": {
-			"name": "desc",
+		"pId": {
+			"name": "pId",
 			"type": "string",
 			"typeLabel": "string",
-			"required": false,
-			"id": "desc",
+			"required": true,
+			"id": "pId",
+			"order": 2
+		},
+		"level": {
+			"name": "level",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "level",
 			"order": 3
+		},
+		"strategyId": {
+			"name": "strategyId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "strategyId",
+			"order": 4
 		}
 	}
 }

@@ -8,6 +8,14 @@
 			"required": true,
 			"id": "name",
 			"order": 0
+		},
+		"userId": {
+			"name": "userId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "userId",
+			"order": 1
 		}
 	}
 }
