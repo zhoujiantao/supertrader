@@ -1,0 +1,37 @@
+{
+	"type": "Collection",
+	"properties": {
+		"tradeId": {
+			"name": "tradeId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "tradeId",
+			"order": 0
+		},
+		"tagId": {
+			"name": "tagId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "tagId",
+			"order": 1
+		},
+		"tagName": {
+			"name": "tagName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "tagName",
+			"order": 2
+		},
+		"desc": {
+			"name": "desc",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "desc",
+			"order": 3
+		}
+	}
+}

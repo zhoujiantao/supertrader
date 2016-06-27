@@ -1,0 +1,205 @@
+{
+	"type": "Collection",
+	"properties": {
+		"symbolId": {
+			"name": "symbolId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "symbolId",
+			"order": 0
+		},
+		"openTime": {
+			"name": "openTime",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "openTime",
+			"order": 1
+		},
+		"closeTime": {
+			"name": "closeTime",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "closeTime",
+			"order": 2
+		},
+		"symbolName": {
+			"name": "symbolName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "symbolName",
+			"order": 3
+		},
+		"openType": {
+			"name": "openType",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "openType",
+			"order": 4
+		},
+		"closeType": {
+			"name": "closeType",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "closeType",
+			"order": 5
+		},
+		"closeTypeName": {
+			"name": "closeTypeName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "closeTypeName",
+			"order": 6
+		},
+		"openTypeName": {
+			"name": "openTypeName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "openTypeName",
+			"order": 7
+		},
+		"openPrice": {
+			"name": "openPrice",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "openPrice",
+			"order": 8
+		},
+		"closePrice": {
+			"name": "closePrice",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "closePrice",
+			"order": 9
+		},
+		"stoploss": {
+			"name": "stoploss",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "stoploss",
+			"order": 10
+		},
+		"takeProfit": {
+			"name": "takeProfit",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "takeProfit",
+			"order": 11
+		},
+		"timeRange": {
+			"name": "timeRange",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "timeRange",
+			"order": 12
+		},
+		"stoplossPips": {
+			"name": "stoplossPips",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "stoplossPips",
+			"order": 13
+		},
+		"takeProfitPips": {
+			"name": "takeProfitPips",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "takeProfitPips",
+			"order": 14
+		},
+		"profitPips": {
+			"name": "profitPips",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "profitPips",
+			"order": 15
+		},
+		"openPercentage": {
+			"name": "openPercentage",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "openPercentage",
+			"order": 16
+		},
+		"closePercentage": {
+			"name": "closePercentage",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "closePercentage",
+			"order": 17
+		},
+		"lots": {
+			"name": "lots",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "lots",
+			"order": 18
+		},
+		"openPositionId": {
+			"name": "openPositionId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "openPositionId",
+			"order": 19
+		},
+		"openPositionName": {
+			"name": "openPositionName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "openPositionName",
+			"order": 20
+		},
+		"closePositionId": {
+			"name": "closePositionId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "closePositionId",
+			"order": 21
+		},
+		"closePositionName": {
+			"name": "closePositionName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "closePositionName",
+			"order": 22
+		},
+		"accountId": {
+			"name": "accountId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "accountId",
+			"order": 23
+		},
+		"accountName": {
+			"name": "accountName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "accountName",
+			"order": 24
+		}
+	}
+}

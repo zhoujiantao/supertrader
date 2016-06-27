@@ -1,0 +1,13 @@
+{
+	"type": "Collection",
+	"properties": {
+		"accountName": {
+			"name": "accountName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "accountName",
+			"order": 0
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "name",
+			"order": 0
+		},
+		"pid": {
+			"name": "pid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "pid",
+			"order": 1
+		},
+		"desc": {
+			"name": "desc",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "desc",
+			"order": 2
+		},
+		"level": {
+			"name": "level",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "level",
+			"order": 3
+		},
+		"strategyid": {
+			"name": "strategyid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "strategyid",
+			"order": 4
+		}
+	}
+}
