@@ -20,26 +20,46 @@ function configGrunt(grunt){
 
 
 	var browserifyOption =  (function (){
-		var  transform =   ['reactify','envify','babelify'];
+		var  transform =   [
+
+
+
+
+			'reactify',
+			'envify',
+			'babelify'
+
+		];
+
+
 
 		var build =  {
 			files:{},
 
 			options: {
-				external:'react',
-			 	transform: transform
+
+
+
+					transform: transform
 
 			}
 		} ;
 		build.files[jsVersion.build]  = ['src/scripts/app.js'];
-		var vendor={
-			options: {
-				require: ['react'],
-				transform: transform
 
+		var vendor={
+			files:{
+
+			} ,
+			opions:{
+				standalone:true
 			}
+
+
 		};
-		vendor.dest = jsVersion.build_vendor;
+		//vendor.dest = jsVersion.build_vendor;
+		vendor.files[buildPath+'/thirdparty/jquery-bundle.js']  = ['node_modules/jquery'];
+		//vendor.files[buildPath+'/thirdparty/react-bundle.js']  = ['node_modules/react'];
+		//vendor.files[buildPath+'/thirdparty/moment-bundle.js']  = ['node_modules/moment'];
 
 
 		var dist = {
@@ -69,6 +89,7 @@ function configGrunt(grunt){
 		dist.files[distPath+'/scripts/vendor-v'+version+'.min.js']  =  jsVersion.dist;
 		return{
 			main:main,
+
 			dist:dist
 		} ;
 	})();
@@ -183,7 +204,7 @@ function configGrunt(grunt){
 	grunt.loadNpmTasks('grunt-webpack');
 
 	grunt.registerTask('default', ["copy:build","replace:build",'browserify:build','watch']);
-	grunt.registerTask('build', ["copy:build","replace:build",'browserify','browserify','watch']);
+	grunt.registerTask('build', ["copy:build","replace:build",'browserify:vendor','browserify:build','watch']);
 
 	grunt.registerTask('dist', ["copy:dist","replace:dist",'browserify:dist','uglify:dist']);
 

@@ -1,10 +1,26 @@
 var path = require('path');
 
+var CommonsChunkPlugin = require("./lib/optimize/CommonsChunkPlugin");
+
+
 module.exports = {
-	entry: './src/scripts/app.js',
+
+	entry: {
+		app: "./src/scripts/app.js"
+
+	},
 	output: {
-		path: path.join(__dirname, '/build/scripts'),
-		filename: 'vendor-v1.0.0.js'
+		path: path.join(__dirname, "/build/scripts"),
+		filename: "[name].js" ,
+		libraryTarget:'umd'
+	},
+	externals: {
+		"jquery": "$" ,
+		"react":"React" ,
+		"react-dom":'ReactDOM',
+		"moment":"moment",
+		"react-datetime":"DateTimeField",
+		"react-addons-linked-state-mixin":"LinkedStateMixin"
 	},
 	resolve: {
 		extensions: ['', '.js', '.jsx']
@@ -18,9 +34,6 @@ module.exports = {
 				query: {
 					presets: ['react','es2015']
 				}
-			},
-			{
-
 			}
 		]
 	}
