@@ -2,6 +2,7 @@
 <html lang="en" ng-app="forexApp">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width;initial-scale=1">
     <title></title>
     <link type="text/css" rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
@@ -9,20 +10,32 @@
 
 </head>
 <body>
+ <div class="container-fluid">
+     <div class="row">
+         <ng-include src="'modules/nav/nav.html'"></ng-include>
 
-<ng-include src="'modules/nav/nav.html'"></ng-include>
+     </div>
 
 
+    <div class="row">
+        <ui-view>
 
-<ui-view>
+        </ui-view>
+    </div>
 
-</ui-view>
+ </div>
 
+<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script type="text/javascript" src="app.js"></script>
+ <script type="text/javascript" src="directives/strategyForm/strategyForm.js"></script>
+ <script type="text/javascript" src="directives/strategyTable/strategyTable.js"></script>
+
 <script type="text/javascript" src="modules/nav/nav.js"></script>
 <script type="text/javascript" src="modules/plan/plan.js"></script>
+ <script type="text/javascript" src="modules/strategy/strategy.js"></script>
 </body>
 </html>

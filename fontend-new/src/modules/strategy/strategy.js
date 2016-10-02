@@ -1,0 +1,3 @@
+forexApp.controller('strategyCtl',function(){
+
+});
