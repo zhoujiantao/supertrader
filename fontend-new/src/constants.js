@@ -1,0 +1,1 @@
+forexApp.constant('dataUrl','http://localhost:5000');
