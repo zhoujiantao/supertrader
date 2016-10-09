@@ -11,7 +11,7 @@
 </head>
 <body>
  <div class="container-fluid">
-     <div class="row">
+     <div class="row" ng-show="isLogin">
          <ng-include src="'modules/nav/nav.html'"></ng-include>
 
      </div>
@@ -34,7 +34,7 @@
 <script type="text/javascript" src="app.js"></script>
  <script type="text/javascript" src="constants.js"></script>
  <script type="text/javascript" src="routeConfig.js"></script>
- <script type="text/javascript" src="app.js"></script>
+
  <script type="text/javascript" src="directives/strategyForm/strategyForm.js"></script>
  <script type="text/javascript" src="directives/strategyTable/strategyTable.js"></script>
  <script type="text/javascript" src="modules/dashboard/dashboard.js"></script>
