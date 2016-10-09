@@ -1,3 +1,3 @@
-/**
- * Created by zjt on 2016/10/8.
- */
+forexApp.controller('loginCtrl',function(){
+
+});
