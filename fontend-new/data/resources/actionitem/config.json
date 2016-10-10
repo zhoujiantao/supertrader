@@ -1,0 +1,109 @@
+{
+	"type": "Collection",
+	"properties": {
+		"planId": {
+			"name": "planId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "planId",
+			"order": 0
+		},
+		"actionDate": {
+			"name": "actionDate",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "actionDate",
+			"order": 1
+		},
+		"currentPrice": {
+			"name": "currentPrice",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "currentPrice",
+			"order": 2
+		},
+		"tradeType": {
+			"name": "tradeType",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "tradeType",
+			"order": 3
+		},
+		"strategyItemId": {
+			"name": "strategyItemId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "strategyItemId",
+			"order": 4
+		},
+		"isBegin": {
+			"name": "isBegin",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "isBegin",
+			"order": 5
+		},
+		"isLast": {
+			"name": "isLast",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "isLast",
+			"order": 6
+		},
+		"targetPrice": {
+			"name": "targetPrice",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "targetPrice",
+			"order": 7
+		},
+		"stopLessPrice": {
+			"name": "stopLessPrice",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "stopLessPrice",
+			"order": 8
+		},
+		"successPrice": {
+			"name": "successPrice",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "successPrice",
+			"order": 9
+		},
+		"successPips": {
+			"name": "successPips",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "successPips",
+			"order": 10
+		},
+		"stopLessPips": {
+			"name": "stopLessPips",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "stopLessPips",
+			"order": 11
+		},
+		"ticket": {
+			"name": "ticket",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "ticket",
+			"order": 12
+		}
+	}
+}

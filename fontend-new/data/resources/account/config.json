@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"accountName": {
+			"name": "accountName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "accountName",
+			"order": 0
+		},
+		"userId": {
+			"name": "userId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "userId",
+			"order": 1
+		},
+		"startMoney": {
+			"name": "startMoney",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "startMoney",
+			"order": 2
+		},
+		"blance": {
+			"name": "blance",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "blance",
+			"order": 3
+		},
+		"fuying": {
+			"name": "fuying",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "fuying",
+			"order": 4
+		}
+	}
+}

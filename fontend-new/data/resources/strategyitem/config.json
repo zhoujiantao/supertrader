@@ -1,0 +1,29 @@
+{
+	"type": "Collection",
+	"properties": {
+		"strategyId": {
+			"name": "strategyId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "strategyId",
+			"order": 0
+		},
+		"itemName": {
+			"name": "itemName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "itemName",
+			"order": 1
+		},
+		"desc": {
+			"name": "desc",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "desc",
+			"order": 2
+		}
+	}
+}

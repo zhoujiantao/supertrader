@@ -1,0 +1,133 @@
+{
+	"type": "Collection",
+	"properties": {
+		"symbolId": {
+			"name": "symbolId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "symbolId",
+			"order": 0
+		},
+		"openTime": {
+			"name": "openTime",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "openTime",
+			"order": 1
+		},
+		"closeTime": {
+			"name": "closeTime",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "closeTime",
+			"order": 2
+		},
+		"symbolName": {
+			"name": "symbolName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "symbolName",
+			"order": 3
+		},
+		"openPrice": {
+			"name": "openPrice",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "openPrice",
+			"order": 4
+		},
+		"closePrice": {
+			"name": "closePrice",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "closePrice",
+			"order": 5
+		},
+		"stoploss": {
+			"name": "stoploss",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "stoploss",
+			"order": 6
+		},
+		"takeProfit": {
+			"name": "takeProfit",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "takeProfit",
+			"order": 7
+		},
+		"timeRange": {
+			"name": "timeRange",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "timeRange",
+			"order": 8
+		},
+		"stoplossPips": {
+			"name": "stoplossPips",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "stoplossPips",
+			"order": 9
+		},
+		"takeProfitPips": {
+			"name": "takeProfitPips",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "takeProfitPips",
+			"order": 10
+		},
+		"profitPips": {
+			"name": "profitPips",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "profitPips",
+			"order": 11
+		},
+		"openPercentage": {
+			"name": "openPercentage",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "openPercentage",
+			"order": 12
+		},
+		"closePercentage": {
+			"name": "closePercentage",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "closePercentage",
+			"order": 13
+		},
+		"lots": {
+			"name": "lots",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "lots",
+			"order": 14
+		},
+		"planId": {
+			"name": "planId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "planId",
+			"order": 15
+		}
+	}
+}

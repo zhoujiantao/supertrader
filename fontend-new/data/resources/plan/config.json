@@ -1,0 +1,69 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "name",
+			"order": 0
+		},
+		"strategyId": {
+			"name": "strategyId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "strategyId",
+			"order": 1
+		},
+		"strategyName": {
+			"name": "strategyName",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "strategyName",
+			"order": 2
+		},
+		"startTime": {
+			"name": "startTime",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "startTime",
+			"order": 3
+		},
+		"endTime": {
+			"name": "endTime",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "endTime",
+			"order": 4
+		},
+		"accountId": {
+			"name": "accountId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "accountId",
+			"order": 5
+		},
+		"symbolId": {
+			"name": "symbolId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "symbolId",
+			"order": 6
+		},
+		"close": {
+			"name": "close",
+			"type": "boolean",
+			"typeLabel": "boolean",
+			"required": true,
+			"id": "close",
+			"order": 7
+		}
+	}
+}
