@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading"> account list </div>
+            <div class="panel-body">
+                <table class="table talbe-bordered table-hover">
+                    <thead>
+                       <tr>
+                           <th>id</th>
+                           <th>current</th>
+                           <th>name</th>
+                           <th>description</th>
+                           <th>action</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                         <tr ng-repeat="model in accountList">
+                             <td>{{model.id}}</td>
+                             <td>
+
+                                 <input type="checkbox" ng-checked="model.current">
+                             </td>
+                             <td>{{model.name}}</td>
+                             <td>{{model.description}}</td>
+                              <td>
+                                  <button class="btn btn-info">edit</button>
+                                  <button class="btn btn-danger">delete</button>
+                              </td>
+                         </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

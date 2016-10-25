@@ -28,7 +28,7 @@ gulp.task('default',function(){
 
 
         } ,
-        port:5000
+        port:3000
     });
 
     build();

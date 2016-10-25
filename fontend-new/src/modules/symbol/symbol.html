@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<div class="container">
+    <div class="row">
+        <div class="alert alert-success" role="alert">symbol</div>
+    </div>
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading"> symbol management</div>
+            <div class="panel-body">
 
-</body>
-</html>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="model in symbolList">
+                            <td>{{model.name}}</td>
+                            <td>
+                                <button class="btn btn-info">edit</button>
+                                 <button class="btn btn-danger">delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row"></div>
+    <div class="row"></div>
+</div>

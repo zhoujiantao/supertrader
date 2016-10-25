@@ -1,0 +1,12 @@
+forexApp.controller('accountManageCtrl',function($scope){
+     $scope.accountList=[
+         {id:1,current:true,name:'1',description:'desc'},
+         {id:1,current:true,name:'1',description:'desc'},
+         {id:1,current:true,name:'1',description:'desc'},
+         {id:1,current:true,name:'1',description:'desc'},
+         {id:1,current:true,name:'1',description:'desc'},
+         {id:1,current:true,name:'1',description:'desc'},
+         {id:1,current:true,name:'1',description:'desc'},
+         {id:1,current:true,name:'1',description:'desc'}
+     ];
+});
