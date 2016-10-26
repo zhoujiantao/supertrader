@@ -6,7 +6,7 @@
         <div class="panel panel-default">
             <div class="panel-heading"> symbol management</div>
             <div class="panel-body">
-
+                <select ng-model="selectedSymbol" ng-options="item.name for item in symbolList track  by item.id"></select>
                 <table class="table table-bordered table-hover">
                     <thead>
                         <tr>
