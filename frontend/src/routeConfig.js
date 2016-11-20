@@ -25,18 +25,31 @@ forexApp.config(function($stateProvider){
         controller:'strategyCtrl',
         templateUrl:'/modules/strategy/strategy.html'
     };
+	var  strategyEditRoute = {
+		name:'strategyEdit',
+		url:'/strategyEdit',
+		controller:'strategyEditCtrl',
+		templateUrl:'/modules/strategy/strategyEdit.html'
+	};
     var  accountManageRoute = {
         name:'accountManage',
         url:'/accountManage',
         controller:'accountManageCtrl',
         templateUrl:'/modules/account/accountManage.html'
     };
+	var  planRoute = {
+		name:'planRoute',
+		url:'/plan',
+		controller:'planCtrl',
+		templateUrl:'/modules/plan/plan.html'
+	};
 
 
     $stateProvider.state(loginRoue);
     $stateProvider.state(dashboardRoute);
     $stateProvider.state(symbolRoute);
     $stateProvider.state(strategyRoute);
+	$stateProvider.state(strategyEditRoute);
     $stateProvider.state(accountManageRoute);
-
+	$stateProvider.state(planRoute);
 });

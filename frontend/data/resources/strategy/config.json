@@ -9,12 +9,12 @@
 			"id": "name",
 			"order": 0
 		},
-		"dec": {
-			"name": "dec",
+		"desc": {
+			"name": "desc",
 			"type": "string",
 			"typeLabel": "string",
 			"required": false,
-			"id": "dec",
+			"id": "desc",
 			"order": 1
 		},
 		"userId": {

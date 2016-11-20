@@ -9,12 +9,12 @@
 			"id": "strategyId",
 			"order": 0
 		},
-		"itemName": {
-			"name": "itemName",
+		"name": {
+			"name": "name",
 			"type": "string",
 			"typeLabel": "string",
 			"required": true,
-			"id": "itemName",
+			"id": "name",
 			"order": 1
 		},
 		"desc": {

@@ -8,5 +8,12 @@ forexApp.constant('apiUrl',{
     },
     user:{
         loadUser:'/user'
-    }
+    },
+	strategy:{
+		getItems:'/strategyitem',
+		getById:'/strategy',
+		getAll:'/strategy',
+		add:'/strategy',
+		addItems:'/strategyitem'
+	}
 });

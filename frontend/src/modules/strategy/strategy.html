@@ -1,14 +1,32 @@
-<div class="container" ng-controller="strategyCtl">
+<div class="container">
     <div class="row">
         <div class="panel panel-default">
               <div class="panel-heading">
                   strategy list
               </div>
             <div class="panel-body">
-                <div class="row">
-                    <strategy-form></strategy-form>
-                </div>
-                 <strategy-table></strategy-table>
+
+                <button class="btn btn-default" ng-click="add()">add strategy</button>
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>name</th>
+                        <th>description</th>
+                        <th>action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="item in listData">
+                        <td>{{item.id}}</td>
+                        <td>{{item.name}}</td>
+                        <td>{{item.desc}}</td>
+                        <td><a ng-click="edit(item.id)">edit</a><a ng-click="delete(item.id)">delete</a></td>
+                    </tr>
+
+                    </tbody>
+                </table>
             </div>
 
         </div>
