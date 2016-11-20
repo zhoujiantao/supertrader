@@ -1,4 +1,12 @@
-forexApp.controller('planCtrl',function($scope){
+forexApp.controller('planCtrl',['$location','$scope',function($location,$scope){
 
-	$scope.title='plan';
-});
+	$scope.listData=[];
+
+
+	$scope.loadListData = function(){
+
+	}
+	$scope.addPlan = function(){
+		$location.url('/planEdit');
+	}
+}]);

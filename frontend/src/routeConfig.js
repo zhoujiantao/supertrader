@@ -43,7 +43,12 @@ forexApp.config(function($stateProvider){
 		controller:'planCtrl',
 		templateUrl:'/modules/plan/plan.html'
 	};
-
+	var  planEditRoute = {
+		name:'planEditRoute',
+		url:'/planEdit',
+		controller:'planEditCtrl',
+		templateUrl:'/modules/plan/planEdit.html'
+	};
 
     $stateProvider.state(loginRoue);
     $stateProvider.state(dashboardRoute);
@@ -52,4 +57,5 @@ forexApp.config(function($stateProvider){
 	$stateProvider.state(strategyEditRoute);
     $stateProvider.state(accountManageRoute);
 	$stateProvider.state(planRoute);
+	$stateProvider.state(planEditRoute);
 });

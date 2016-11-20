@@ -1,10 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<div class="container">
+    <div class="row">
+      <div class="panel panel-default">
+          <div class="panel-heading">plan edit</div>
+          <div class="panel-body">
 
-</body>
-</html>
+              <form class="form form-horizontal">
+                   <div class="form-group form-inline">
+                       <label>plan name:</label>
+                       <input type="text" class="form-control">
+                       <label>symbol:</label>
+                       <input type="text" class="form-control">
+                   </div>
+                  <div class="form-group form-inline">
+                      <label>open date:</label>
+                      <input type="text" class="form-control">
+                      <label>close date:</label>
+                      <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label>strategy:</label>
+                      <input type="text" class="form-control">
+
+                  </div>
+
+                  <div class="panel panel-success">
+                      <div class="panel-heading">trade log <button class="btn btn-info">add log</button></div>
+                      <div class="panel-body">
+                           <table class="table-bordered table">
+                                <thead>
+                                    <tr>
+                                        <th>ticket</th>
+                                        <th>symbol</th>
+                                        <th>open date</th>
+                                        <th>price</th>
+                                        <th>close date</th>
+                                        <th>close price</th>
+                                        <th>profit</th>
+                                        <th>strategy item</th>
+
+                                    </tr>
+                                </thead>
+                           </table>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+
+    </div>
+</div>
