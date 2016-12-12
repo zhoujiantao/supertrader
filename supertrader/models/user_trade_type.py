@@ -1,6 +1,7 @@
-class UserStrategy:
+class UserTradeType:
     def __init__(self):
         self.id=0
         self.name=''
-        self.user_id=0
+        self.createTime=''
+        self.modifyTime=''
         self.desc=''

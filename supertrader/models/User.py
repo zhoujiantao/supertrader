@@ -8,4 +8,4 @@ class User(object):
         self.showName = ''
         self.pwd = '',
         self.registerTime = ''
-
+        self.active=0
