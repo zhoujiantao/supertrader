@@ -5,11 +5,18 @@ var browserSync = require('browser-sync').create();
 
 var hasWatch = false;
 
+var copythirdparty=function(){
+    gulp.src('./bower_components/**/.*')
+        .pipe(gulp.dest('./dist/vendor/'));
+}
+
+
 var build = function(){
+
     console.log('build  start....');
     gulp.src(['./src/**/*'])
         .pipe(gulp.dest('./dist'));
-
+    copythirdparty();
      if(!hasWatch)
      {
          hasWatch = true;
@@ -18,6 +25,7 @@ var build = function(){
              browserSync.reload();
          });
      }
+
 
 }
 
